@@ -1,0 +1,18 @@
+{:duct.profile/base
+ {:duct.core/project-ns duct-beginner-practice
+
+  ;duct.router/cascading component is a default router from the templete
+  ;which takes a vector of references to other components
+  :duct.router/cascading
+  ;#ig/ref is a syntax sugar to reference other components
+  [#ig/ref [:duct-beginner-practice.handler/example]]
+
+  :duct-beginner-practice.handler/example {}}
+
+ :duct.profile/dev   #duct/include "dev"
+ :duct.profile/local #duct/include "local"
+ :duct.profile/prod  {}
+
+ :duct.module/logging {}
+ :duct.module.web/api
+ {}}
