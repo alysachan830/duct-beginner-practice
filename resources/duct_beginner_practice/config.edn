@@ -5,9 +5,9 @@
   ;which takes a vector of references to other components
   :duct.router/cascading
   ;#ig/ref is a syntax sugar to reference other components
-  [#ig/ref [:duct-beginner-practice.handler/example]]
+  [#ig/ref [:duct-beginner-practice.handler/api]]
 
-  :duct-beginner-practice.handler/example {}}
+  :duct-beginner-practice.handler/api {}}
 
  :duct.profile/dev   #duct/include "dev"
  :duct.profile/local #duct/include "local"

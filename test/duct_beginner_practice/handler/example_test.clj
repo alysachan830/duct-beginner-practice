@@ -2,7 +2,7 @@
   (:require [clojure.test :refer :all]
             [integrant.core :as ig]
             [ring.mock.request :as mock]
-            [duct-beginner-practice.handler.example :as example]))
+            [duct-beginner-practice.handler.api :as example]))
 
 (deftest smoke-test
   (testing "example page exists"
